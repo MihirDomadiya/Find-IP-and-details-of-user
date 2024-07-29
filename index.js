@@ -13,7 +13,7 @@ app.get("/", async (req, res) => {
   const ip = req.query.ip || "";
   const fetchUrl = ip ? `https://ipapi.co/${ip}/json` : "https://ipapi.co/json";
 
-  try {
+  try { 
     // Use dynamic import for node-fetch
     const fetch = (await import("node-fetch")).default;
 
