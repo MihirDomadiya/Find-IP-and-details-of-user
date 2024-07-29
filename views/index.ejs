@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Information</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #007BFF;
+        }
+
+        form {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .item strong {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>IP Information</h1>
+        <form action="/" method="GET">
+            <input type="text" name="ip" placeholder="Enter IP address" required>
+            <button type="submit">Find</button>
+        </form>
+        <div class="item"><strong>IP:</strong>
+            <%= data.ip %>
+        </div>
+        <div class="item"><strong>Network:</strong>
+            <%= data.network %>
+        </div>
+        <div class="item"><strong>Version:</strong>
+            <%= data.version %>
+        </div>
+        <div class="item"><strong>City:</strong>
+            <%= data.city %>
+        </div>
+        <div class="item"><strong>Region:</strong>
+            <%= data.region %>
+        </div>
+        <div class="item"><strong>Region Code:</strong>
+            <%= data.region_code %>
+        </div>
+        <div class="item"><strong>Country:</strong>
+            <%= data.country %>
+        </div>
+        <div class="item"><strong>Country Name:</strong>
+            <%= data.country_name %>
+        </div>
+        <div class="item"><strong>Country Code:</strong>
+            <%= data.country_code %>
+        </div>
+        <div class="item"><strong>Country Code ISO3:</strong>
+            <%= data.country_code_iso3 %>
+        </div>
+        <div class="item"><strong>Country Capital:</strong>
+            <%= data.country_capital %>
+        </div>
+        <div class="item"><strong>Country TLD:</strong>
+            <%= data.country_tld %>
+        </div>
+        <div class="item"><strong>Continent Code:</strong>
+            <%= data.continent_code %>
+        </div>
+        <div class="item"><strong>In EU:</strong>
+            <%= data.in_eu %>
+        </div>
+        <div class="item"><strong>Postal:</strong>
+            <%= data.postal %>
+        </div>
+        <div class="item"><strong>Latitude:</strong>
+            <%= data.latitude %>
+        </div>
+        <div class="item"><strong>Longitude:</strong>
+            <%= data.longitude %>
+        </div>
+        <div class="item"><strong>Timezone:</strong>
+            <%= data.timezone %>
+        </div>
+        <div class="item"><strong>UTC Offset:</strong>
+            <%= data.utc_offset %>
+        </div>
+        <div class="item"><strong>Country Calling Code:</strong>
+            <%= data.country_calling_code %>
+        </div>
+        <div class="item"><strong>Currency:</strong>
+            <%= data.currency %>
+        </div>
+        <div class="item"><strong>Currency Name:</strong>
+            <%= data.currency_name %>
+        </div>
+        <div class="item"><strong>Languages:</strong>
+            <%= data.languages %>
+        </div>
+        <div class="item"><strong>Country Area:</strong>
+            <%= data.country_area %>
+        </div>
+        <div class="item"><strong>Country Population:</strong>
+            <%= data.country_population %>
+        </div>
+        <div class="item"><strong>ASN:</strong>
+            <%= data.asn %>
+        </div>
+    </div>
+</body>
+
+</html>
