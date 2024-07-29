@@ -19,11 +19,11 @@ This is a simple web application that allows users to get detailed information a
 
 ```sh
 git clone https://github.com/yourusername/ip-information-finder.git
-
-### Backend Setup
+```
+## Setup
 
 2. Navigate to the `Find-IP-and-details-of-user` directory:
-   ```bash
+   ```sh
    cd Find-IP-and-details-of-user
    npm install
    npm start
